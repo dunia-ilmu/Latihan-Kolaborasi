@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+* {
+   box-sizing: border-box;
+   text-decoration: none;
+}
+body {
+   font-family: "Quicksand", sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+h2 {
+   color: #00a2c6;
+}
+
+h3 {
+   color: #00a2c6;
+}
+
+header {
+   display: inline;
+}
+nav {
+   background-color: #00a2c6;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+}
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+nav a:hover {
+   font-weight: bold;
+}
+.jumbotron {
+   position: relative;
+   overflow: hidden;
+   font-size: 20px;
+   background-color: #00c8eb;
+   color: white;
+   height: 400px;
+}
+.content-slide {
+   margin: auto;
+}
+.mySlides img {
+   position: relative;
+   width: 100%;
+   display: block;
+   opacity: 0.6;
+}
+.prev,
+.next {
+   cursor: pointer;
+   position: absolute;
+   top: 40%;
+   width: auto;
+   padding: 16px;
+   color: rgb(255, 254, 224);
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   background-color: rgba(0, 0, 0, 0.8);
+}
+.next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+   background-color: rgba(255, 255, 255, 0.8);
+   color: rgb(0, 0, 0);
+}
+.titel {
+   width: 100%;
+   top: 20%;
+   position: absolute;
+   text-align: center;
+   margin: 0 auto;
+   user-select: none;
+}
+.btn-sliders {
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   display: flex;
+   transform: translateX(-50%);
+}
+.btn-sliders span {
+   height: 15px;
+   width: 15px;
+   border: 2px solid white;
+   margin: 0 3px;
+   cursor: pointer;
+   border-radius: 50%;
+}
+.btn-sliders span:hover {
+   background: white;
+}
+.images {
+   transform: translateY(-100px);
+}
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+#content {
+   float: left;
+   width: 75%;
+}
+aside {
+   float: right;
+   width: 24%;
+}
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+.featured-image {
+   width: 100%;
+   max-height: 300px;
+   object-fit: cover;
+   object-position: center;
+}
+.profile header {
+   text-align: center;
+}
+.profile img {
+   width: 200px;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #00a2c6;
+   text-align: center;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+      width: 100%;
+      padding: 0;
+   }
+   .images {
+      transform: translateY(0);
+      position: absolute;
+      height: 400px;
+   }
+}
